@@ -1,4 +1,5 @@
-﻿using DSharpPlus;
+﻿using DiscordBot.Commands;
+using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.EventArgs;
 using Newtonsoft.Json;
@@ -41,6 +42,7 @@ namespace DiscordBot
                 CaseSensitive = false,
                 EnableDms = false,
                 EnableMentionPrefix = true,
+                EnableDefaultHelp = false,
                 StringPrefixes = new string[] {configJson.Prefix}
             };
 
@@ -48,7 +50,7 @@ namespace DiscordBot
             client.Ready += OnClientReady;
 
             commandsNext = client.UseCommandsNext(commandConfig);
-
+            commandsNext.RegisterCommands<HelpCommand>();
             await client.ConnectAsync();
             ConnectDatabase();
             await Task.Delay(-1);
