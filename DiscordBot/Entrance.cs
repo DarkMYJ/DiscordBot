@@ -6,7 +6,7 @@ namespace DiscordBot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CozyBot cozyBot = new CozyBot();
         }
     }
 }
