@@ -1,9 +1,0 @@
-﻿{
-  "token": "your token goes here",
-  "prefix": "?",
-  "hostname": "your host",
-  "port": "port",
-  "database": "your db",
-  "username": "username",
-  "password": "your  password here"
-}
