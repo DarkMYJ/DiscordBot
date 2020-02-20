@@ -5,5 +5,5 @@
   "port": "port",
   "database": "your db",
   "username": "username",
-  "password": "password"
+  "password": "your password"
 }
