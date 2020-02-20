@@ -7,6 +7,7 @@ namespace DiscordBot
         static void Main(string[] args)
         {
             CozyBot cozyBot = new CozyBot();
+            cozyBot.StartBot().GetAwaiter().GetResult();
         }
     }
 }
