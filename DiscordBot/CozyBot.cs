@@ -51,6 +51,10 @@ namespace DiscordBot
 
             commandsNext = client.UseCommandsNext(commandConfig);
             commandsNext.RegisterCommands<HelpCommand>();
+            commandsNext.RegisterCommands<CommonCommand>();
+            commandsNext.RegisterCommands<CommonCommand2>();
+            commandsNext.RegisterCommands<GameCommand>();
+
             await client.ConnectAsync();
             ConnectDatabase();
             await Task.Delay(-1);

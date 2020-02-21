@@ -27,6 +27,11 @@
     <PackageReference Include="DSharpPlus" Version="4.0.0-nightly-00658" />
     <PackageReference Include="DSharpPlus.CommandsNext" Version="4.0.0-nightly-00658" />
     <PackageReference Include="DSharpPlus.Interactivity" Version="4.0.0-nightly-00658" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiscordBotDataModel\DiscordBotDataModel.csproj" />
   </ItemGroup>
   
  
